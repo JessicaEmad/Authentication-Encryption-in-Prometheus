@@ -2,7 +2,7 @@
 This guide walks you through setting up Authentication and Encryption in Prometheus along with Node Exporter using self-signed certificates and basic authentication.
 Certificate Generation for Node Exporter
 
-* To start, we need to generate self-signed certificates for Node Exporter. *
+* To start, we need to generate self-signed certificates for Node Exporter. 
 
 ``` $ sudo openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout node_exporter.key -out node_exporter.crt -subj 
 "/C=US/ST=California/L=Oakland/O=MyOrg/CN=localhost" -addext "subjectAltName = DNS:localhost" ```
